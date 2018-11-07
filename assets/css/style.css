@@ -1,7 +1,5 @@
-/* Wirefreame css*/
 *{
     box-sizing: border-box;
-    text-align: center;
     
 }
 body{
@@ -9,103 +7,183 @@ body{
     color: #777777;
     width: 100%;
     font-size: 18px;
-    text-align: center;
-    margin-top: 0px;
     line-height: 150%;
-    
+    background-image: url("image1.png");
 }
-
-
-   
-      nav{
-      /* padding:20px;*/
-       width:960px;
-       background-color: white;
-       margin-left: 260px;
-      
-   }
-   footer{
+nav {
+    float: right;
+    margin-top: 25px;
+  }
+  
+#logo{
+    float: left;
+    width: 250px;
+    height: 90px;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 90px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    background: #4aaaa5;   
+}
+footer{
        background-color: #777;
-       padding:0px;
-       width:100%;
+       padding:30px;
        color:white;
-       border-top-style: double;
-       border-top-color: teal;
+       border-top:2px solid teal;
        font-size: 10px;
-       float: left;
        margin-bottom: 0px;
+       text-align: center;
+       font-size: 12px;
+       clear:both;
        }
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding-top: 46px;
-    float:right;
-    position: relative;
-    right: -31px;
-}
-li {
-    display: inline;
-}  
-a{
-    padding: 8px;
-    color: gray;
-    border-right-color: rgb(235, 229, 229);
-    border-right-style: solid;
-   
-}
-   section{
-        
-        width: 100%;
-        padding:30px;
-        background-color: white;
-        float:left;
-        background-image: url("image1.png");
-    
-        
-    }
-    article{
-        
-        color: #ebebeb;
-        background-color: white;
-        width:960px;
-        margin-left: 260px;
-    }
-     
-   .text
-   {
-         color: #777;
-         background-color: white;
-         width:100%;
-         padding:10px;
-         text-align: left;
-         padding-bottom: 40px;
-    }
-    h1{
-        float: left;
-        text-align: left;
-        color: white;
-        background-color: teal;
-        padding: 25px;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        position: relative;
-        left: 33px;
-        margin-bottom: 0;
-       
-         
-    }
-    img{
-        float:left;
-        width:252px;
-        height:192px;
-        padding:10px;
-        }
+h1,
+h2,
+h3 {
+       font-family: Georgia, Times, "Times New Roman", serif;
+       font-weight: 700;
+       color: #4aaaa5;
+       }
 
-    h2{
-        color: teal;
-        text-align: left;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        padding: 34px;
-        border-bottom-style: solid;
-        border-bottom-color:lightgray;
-    }
+h1,
+h2,
+h3,
+p {
+  margin-bottom: 20px;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+h1 {
+    padding-bottom: 20px;
+    font-size: 30px;
+    line-height: 49px;
+    border-bottom: 3px solid #dddddd;
+  }
+#masthead {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    margin: 0 0 30px;
+    overflow: auto;
+    color: #ffffff;
+    background: #ffffff;
+    border-bottom: 2px solid #cccccc;
+  }
+.container{
+    width:100%;
+    max-width: 960px;
+    margin: 0 auto;
+    clear:both;
+}
+ 
+nav a {
+        padding-left: 15px;
+        margin-left: 15px;
+        line-height: 18px;
+        color: #999;
+        text-decoration: none;
+        border-left: 1px solid #efefef;
+      }
+
+nav a:first-child {
+        border-left: 0 none;
+      }
+h3, h2 {
+        padding-bottom: 20px;
+        margin-bottom: 15px;
+        line-height: 22px;
+        border-bottom: 2px solid #eeeeee;
+      }
+#main-container {
+        padding-top: 130px;
+        min-height: calc(100vh - 70px);
+      }
+      
+.main-section {
+        float: left;
+        width: 100%;
+        max-width: 960px;
+        padding: 30px;
+        margin: 0px 0 80px;
+        background: #ffffff;
+        border: 1px solid #dddddd;     
+      }
+.auth-image {
+        float: left;
+        width: 200px;
+        height: auto;
+        margin-top: 10px;
+        margin-right: 25px;
+    }     
+   
     
+   
+ /*Contact*/
+ label,
+#text,
+#email,
+textarea {
+  display: block;
+  width: 100%;
+}
+
+#text,
+#email,
+textarea {
+  height: 35px;
+  padding: 0 10px;
+  font-size: 14px;
+  border: 1px solid #dddddd;
+}
+
+textarea {
+  height: 200px;
+}
+
+#submit {
+  padding: 10px 30px;
+  font-size: 18px;
+  color: #ffffff;
+  cursor: pointer;
+  background: #4aaaa5;
+  border: 0 none;
+}
+   
+/* Portfolio*/
+
+.work:nth-child(even) {
+  margin-right: 40px;
+}
+
+.work {
+  position: relative;
+  float: left;
+  width: 274px;
+  margin: 20px 0 25px;
+  overflow: auto;
+}
+.work img {
+  width: 100%;
+  height: 210px;
+  border: 0 none;
+  opacity: 0.8;
+}
+
+.work h3 {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+  background: #4aaaa5;
+  border-bottom: 0;
+}
+

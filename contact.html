@@ -3,41 +3,40 @@
 <html lang="en-us">
  <head>
    <meta charset="UTF-8">
-   <title>Basic-Portfolio</title>
-   <link rel="stylesheet" type="text/css" href="assets/css/contactstyle.css">
+   <title>About | Minal Karani</title>
+   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
  </head>
  <body>
       <!--Navigation Bar-->
-   <nav>    
-    <h1>Minal Karani</h1>
-    <ul>
-      <li><a href='index.html'>About</a></li>
-      <li><a href='portfolio.html'>Portfolio</a></li>
-      <li><a href='#'>Contact</a></li>
-    </ul>
-  </nav>
+      <header id="masthead">
+          <div class="container">
+            <a href="index.html" id="logo">Minal Karani</a>
+            <nav>
+              <a href="index.html">About</a>
+              <a href="portfolio.html">Portfolio</a>
+              <a href="contact.html">Contact</a>
+            </nav>
+          </div>
+        </header>
    <!--Main Content-->
-   <div class="content">
-     <!--Section-->
-        <section>
-           
-        <article>
-            <h2>Contact</h2>
+   <div id="main-container" class="container">
+      <!--Section-->
+         <section class="main-section">
+            <h1>Contact</h1>
             <div class="text">
              Name<br>
-            <input type="text" class="name" size="93" value="Minal Karani"><br>
+            <input type="text" id="text"  value="Minal Karani"><br>
              Email<br>
-            <input type="text" class="email" size="93" value="karani.minal@gmail.com"><br>
+            <input type="text" id="email"  value="karani.minal@gmail.com"><br>
              Message<br>
-             <textarea rows="8" cols="85" class="message"></textarea><br><br>
-            <input type="submit" value="Submit" class="submit">
-        </div>
-        </article>
+             <textarea rows="8" id="message"></textarea><br><br>
+            <input type="submit" id="submit" value="Submit" class="submit">
+        
        </section>
       </div>
   <!--Footer-->
    <footer>
-        <p>&copy Copyright</p>
+    Copyright &copy;
    </footer>
  </body>
 </html>
