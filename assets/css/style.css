@@ -187,3 +187,67 @@ textarea {
   border-bottom: 0;
 }
 
+@media screen and (max-width: 980px) {
+  body {
+    background-color: #333;
+  }
+
+  .container {
+   
+    width: 700px;
+   
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    background-color: #333;
+  }
+
+  .container {
+   
+    width: 600px;
+   
+  }
+  #main-container{
+    
+  }
+}
+@media screen and (max-width: 640px) {
+  body {
+    margin: 0 0 0 0;
+    background-color: #333;
+  }
+  nav {
+    float: left;
+    position: static;
+    text-align: center;
+    width: 100%;
+   
+  }
+#masthead{
+  height:150px;
+  position: static;
+}
+
+.auth-image { width: 100%;}
+#logo{
+  width:100%;  
+}
+#main-container{
+  padding-top: 0;
+}
+
+.main-section {
+  margin: -11px 20px 20px 1px;
+  
+}
+  .container {
+    padding-top: 0;
+    width:340px;
+   
+  }
+.headContainer {
+  width:100%;
+}
+}
+  
